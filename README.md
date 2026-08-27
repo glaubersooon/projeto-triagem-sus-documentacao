@@ -1,13 +1,19 @@
 # Documentação Técnica: Sistema de Triagem e Seleção de Pacientes (SUS)
 
-## Visão Geral do Projeto
-Este repositório documenta a arquitetura de uma ferramenta open source voltada para o setor de saúde, desenvolvida para apoiar um projeto social de alto impacto. O sistema automatiza a seleção acelerada de pacientes de baixa renda aptos a receber tratamentos gratuitos com medicações de alto custo fornecidas pelo SUS.
+## Sobre o Projeto e Propósito Social
+Esta documentação descreve a arquitetura de uma ferramenta desenvolvida em um espaço cedido por uma empresa do setor de saúde para apoiar um projeto social de alto impacto. O sistema automatiza a triagem e a seleção acelerada de pacientes de baixa renda aptos a receber tratamentos gratuitos com medicações de alto custo fornecidas pelo Sistema Único de Saúde (SUS).
 
-## Arquitetura e Segurança de Dados
-Por motivos contratuais corporativos, diretrizes rigorosas de LGPD e políticas de privacidade de dados de saúde, o código-fonte proprietário e os bancos de dados integrados não podem ser expostos publicamente. No entanto, a arquitetura opera sob os seguintes princípios:
-- **Integração Segura:** Conexão entre bancos de dados internos e sistemas públicos de saúde de forma anonimizada e segura.
-- **Automação de Fluxos:** Redução drástica da burocracia manual em triagens médicas e sociais.
+## Restrições de Publicação do Código-Fonte (LGPD e Conformidade Contratual)
+Por razões legais e contratuais estritas, **o código-fonte completo, os scripts de automação e os bancos de dados integrados não podem ser disponibilizados publicamente neste repositório**. Os motivos fundamentais incluem:
+- **Lei Geral de Proteção de Dados (LGPD):** A aplicação lida com dados sensíveis de pacientes, prontuários e informações de saúde protegidas por rigorosos sigilos legais.
+- **Vínculo com Infraestrutura Privada:** O código opera profundamente integrado aos sistemas legados e bancos de dados proprietários da empresa de saúde cedente, o que torna técnica e contratualmente impossível a sua extração, desvinculação ou publicação externa.
+- **Conformidade Corporativa:** As diretrizes internas de segurança da informação da instituição proíbem a exposição de propriedade intelectual e fluxos operacionais sensíveis de saúde pública em ambientes abertos.
+
+## Arquitetura e Funcionamento Geral
+Apesar da indisponibilidade do código-fonte para fins de auditoria externa pública, a engenharia da solução baseia-se em:
+- **Integração Segura:** Camadas de abstração que conectam bancos de dados internos a sistemas públicos de saúde de forma estritamente anonimizada e segura.
+- **Automação de Processos:** Algoritmos internos de triagem que reduzem a burocracia manual, agilizando o cruzamento de dados exigidos por órgãos públicos.
 
 ## Impacto Social e Métricas
-- **Redução de Tempo:** Diminui drasticamente a espera para aprovação e recebimento de tratamentos vitais para pacientes de baixa renda.
-- **Otimização Operacional:** Alivia a sobrecarga de assistentes sociais e equipes médicas no cruzamento de dados com órgãos públicos.
+- **Redução drástica no tempo de espera:** Acelera o fluxo para aprovação e obtenção de tratamentos vitais para pacientes de baixa renda.
+- **Otimização Operacional:** Alivia a sobrecarga de assistentes sociais e equipes médicas no gerenciamento de processos burocráticos junto ao SUS.
